@@ -1,0 +1,351 @@
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Jost"),
+         url("./fonts/Jost-Regular.woff2") format("woff2"),
+         url("./fonts/Jost-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat"),
+         url("./fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+         url("./fonts/PlayfairDisplay-Regular.woff") format("woff");
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.5rem;
+    color: #000;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 3rem;
+} */
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+}
+
+.h2-style {
+    font-size: 2rem;
+    font-family: 'PlayfairDisplay', Georgia, serif;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0 0 2rem;
+}
+
+/*header*/
+
+
+.header__section {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 1% 0;
+    z-index: 10;
+}
+
+.header__logo {
+    width: 3rem;
+    height: 2rem;
+    background: url(./images/logo.png) center / contain no-repeat;
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    font-family: 'Jost', sans-serif; 
+    color: #fff;
+}
+
+.header__button-search {
+    width: 1rem;
+    height: 1rem;
+    background: url(./images/search.svg) center / contain no-repeat;
+    border: none;
+}
+
+/*hero-banner*/
+
+
+.hero-banner__section {
+    position: relative;
+}
+
+.hero-banner__main-heading {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3rem;
+    line-height: 1.3;
+    margin: auto;
+    color: #fff;
+}
+
+/*swiper*/
+
+.slick-slide img {
+    width:100%;
+}
+
+.swiper-slide {
+    height: 100vh;
+    width: 100%;
+    background: transparent center / cover no-repeat;
+}
+
+.swiper-slide--1 {
+    background-image: url(./images/swiper-1.jpeg);
+}
+
+.swiper-slide--2 {
+    background-image: url(./images/swiper-2.jpg);
+}
+
+.swiper-slide--3 {
+    background-image: url(./images/swiper-3.jpg);
+}
+
+/*posts__section*/
+
+.posts__container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.posts__list {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 0 2rem 0;
+}
+
+.posts__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 31%;
+    min-width: 17rem;
+    background: #FFFFFF right / max(7rem) no-repeat;
+    margin: 0 auto;
+}
+
+.posts__item::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 49%, rgba(255,255,255,1) 49%, rgba(255,255,255,1) 51%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
+}
+
+.posts__item-heading {
+    font-family: 'PlayfairDisplay', Georgia, serif;
+    margin: 0 0 2rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.posts__item-content {
+    font-family: Georgia, serif;
+    margin: 0 0 2rem;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.posts__item-image {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+    margin-bottom: 2rem;
+}
+
+.posts__item-rubric {
+    margin: 0 0 2rem;
+    font-size: 1rem;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+
+/*section__subscription*/
+
+.subscription__section {
+    position: relative;
+}
+
+.subscription__container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.subscription__container::after {
+    content: '';
+    position: absolute;
+    left:50%;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color: #DEDEDE;
+    z-index: -1;
+}
+
+.subscription__content-wrapper {
+    background-color: #DEDEDE;
+}
+
+.subscription__content-wrapper {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding: 2% 0 2% 30%;
+}
+
+.subscription__input-heading {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.subscription__content-text {
+    font-family: 'PlayfairDisplay', Georgia, serif;
+    grid-area: 1/1/3/2;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+.subscription__input-text {
+    width: 50%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 1rem;
+    font-family: Georgia, serif;
+}
+
+.subscription__input-text::placeholder {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.subscription__input-submit {
+    width: 10%;
+    background: transparent url(./images/arrow.svg) center /  contain no-repeat;
+    border: none;
+    transform: translateX(-100%);
+}
+
+/*project*/
+
+.project__container {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.project__content {
+    width: 33%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.project__image {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+}
+
+/*articles__section*/
+
+.articles__section {
+    position: relative;
+}
+
+.articles__container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.articles__container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    background-color: #DEDEDE;
+    z-index: -1;
+}
+
+.articles__content-wrapper {
+    background-color: #DEDEDE;
+}
+
+.articles__tag {
+    color: #000;
+}
