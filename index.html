@@ -40,9 +40,9 @@
     <main>
         <section class="hero-banner__section">
             <div class="hero-banner__swiper">
-                <div class="swiper-slide hero-banner__swiper-slide--1"></div>
-                <div class="swiper-slide hero-banner__swiper-slide--2"></div>
-                <div class="swiper-slide hero-banner__swiper-slide--3"></div>
+                <div class="swiper-slide hero-banner__swiper-slide hero-banner__swiper-slide--1"></div>
+                <div class="swiper-slide hero-banner__swiper-slide hero-banner__swiper-slide--2"></div>
+                <div class="swiper-slide hero-banner__swiper-slide hero-banner__swiper-slide--3"></div>
             </div>
             <h1 class="hero-banner__main-heading"> MDW23: A Reawakening of Creativity and Global Connection</h1>
         </section>
@@ -219,11 +219,43 @@
                     <h2 class="h2-style">События в Москве</h2>
                     <button class="events__button-search">Найти событие</button>
                 </div>
-                
-                <div class="events__swiper">
-                    <div class="swiper-slide"></div>
-                    <div class="swiper-slide"></div>
-                    <div class="swiper-slide"></div>
+            </div>
+            <div class="events__swiper">
+                <div class="swiper-slide">
+                    <div class="events__slide">
+                        <div class="events__slide-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                        <h3 class="events__slide-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="events__slide">
+                        <div class="events__slide-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                        <h3 class="events__slide-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="events__slide">
+                        <div class="events__slide-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                        <h3 class="events__slide-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="events__slide">
+                        <div class="events__slide-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                        <h3 class="events__slide-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="events__slide">
+                        <div class="events__slide-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                        <h3 class="events__slide-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="events__slide">
+                        <div class="events__slide-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                        <h3 class="events__slide-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                    </div>
                 </div>
             </div>
         </section>
@@ -323,6 +355,8 @@
         });
         $(document).ready(function(){
           $('.events__swiper').slick({
+            slidesToShow: 4,
+            slidesToScroll: 4,
             autoplay: false,
             arrows: false,
           });
