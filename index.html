@@ -17,22 +17,22 @@
                 <a href="">Новое</a>
             </li>
             <li class="header__nav-item">
-                <a href="header__nav-link">Дизайн</a>
+                <a href="">Дизайн</a>
             </li>
             <li class="header__nav-item">
-                <a href="header__nav-link">Интерьеры</a>
+                <a href="">Интерьеры</a>
             </li>
             <li class="header__nav-item">
-                <a href="header__nav-link">Архитектура</a>
+                <a href="">Архитектура</a>
             </li>
             <li class="header__nav-item">
-                <a href="header__nav-link">Искусство</a>
+                <a href="">Искусство</a>
             </li>
             <li class="header__nav-item">
-                <a href="header__nav-link">Премии</a>
+                <a href="">Премии</a>
             </li>
             <li class="header__nav-item">
-                <a href="header__nav-link">Журнал</a>
+                <a href="">Журнал</a>
             </li>
         </ul>
         <button class="header__button-search"></button> 
@@ -78,7 +78,7 @@
                 <div class="subscription__content-wrapper">
                     <p class="subscription__content-text">Незабываемые дома и вдохновляющий дизайн с доставкой раз в неделю</p>
                     <p class="subscription__input-heading">Присоединяйтесь к сообществу</p>
-                    <form action="">
+                    <form action="" class="subscription__form">
                         <input type="text" placeholder="Введите e-mail" class="subscription__input-text">
                         <input type="submit" class="subscription__input-submit" value="">
                     </form>
@@ -88,7 +88,7 @@
 
         <section class="project__section">
             <div class="project__container">
-                <div class="project__content--left-part">
+                <div class="project__content-part">
                     <div class="project__content-top-part">
                         <div class="project__content-top-part-rubrics">
                             <p>Название рубрики</p>
@@ -101,7 +101,7 @@
                         <a href="" class="project__content-bottom-part-button">Подробнее</a>
                     </div>
                 </div>
-                <div class="project__content--right-part">
+                <div class="project__image-part">
                     <div class="project__image" style="background:url(./images/news-2.jpg) center / cover no-repeat"></div>
                 </div>
             </div>
@@ -112,7 +112,9 @@
                 <div class="articles__content-wrapper">
                     <div class="articles__swiper">
                         <div class="swiper-slide articles__swiper-slide">
-                            <a href="" class="articles__swiper-tag">#ардеко</a>
+                            <div class="articles__swiper-tag-container">
+                                <a href="" class="articles__swiper-tag">#ардеко</a>
+                            </div>
                             <ul class="articles__swiper-list">
                                 <li class="">
                                     <a href="" class="">
@@ -135,10 +137,54 @@
                             </ul>
                         </div>
                         <div class="swiper-slide articles__swiper-slide">
-
+                            <div class="articles__swiper-tag-container">
+                                <a href="" class="articles__swiper-tag">#минимализм</a>
+                            </div>
+                            <ul class="articles__swiper-list">
+                                <li class="">
+                                    <a href="" class="">
+                                        <div class="articles__swiper-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                                        <h3 class="articles__swiper-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class="">
+                                        <div class="articles__swiper-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                                        <h3 class="articles__swiper-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class="">
+                                        <div class="articles__swiper-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                                        <h3 class="articles__swiper-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                         <div class="swiper-slide articles__swiper-slide">
-
+                            <div class="articles__swiper-tag-container">
+                                <a href="" class="articles__swiper-tag">#ресторан</a>  
+                            </div>
+                            <ul class="articles__swiper-list">
+                                <li class="">
+                                    <a href="" class="">
+                                        <div class="articles__swiper-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                                        <h3 class="articles__swiper-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class="">
+                                        <div class="articles__swiper-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                                        <h3 class="articles__swiper-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class="">
+                                        <div class="articles__swiper-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                                        <h3 class="articles__swiper-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -224,37 +270,43 @@
                 <div class="swiper-slide">
                     <div class="events__slide">
                         <div class="events__slide-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
-                        <h3 class="events__slide-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                        <h3 class="events__slide-heading">Дом моделей. Индустрия образов</h3>
+                        <p class="">Выставки в городе</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="events__slide">
                         <div class="events__slide-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
-                        <h3 class="events__slide-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                        <h3 class="events__slide-heading">Отличники</h3>
+                        <p class="">Выставки в городе</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="events__slide">
                         <div class="events__slide-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
-                        <h3 class="events__slide-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                        <h3 class="events__slide-heading">Соцветие</h3>
+                        <p class="">Выставки в городе</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="events__slide">
                         <div class="events__slide-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
-                        <h3 class="events__slide-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                        <h3 class="events__slide-heading">Парижский отель</h3>
+                        <p class="">Выставки в городе</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="events__slide">
                         <div class="events__slide-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
-                        <h3 class="events__slide-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                        <h3 class="events__slide-heading">Иинтерьеры Жака Гарсии</h3>
+                        <p class="">Выставки в городе</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="events__slide">
                         <div class="events__slide-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
-                        <h3 class="events__slide-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
+                        <h3 class="events__slide-heading">Proust</h3>
+                        <p class="">Выставки в городе</p>
                     </div>
                 </div>
             </div>
@@ -262,10 +314,10 @@
 
         <section class="project__section">
             <div class="project__container">
-                <div class="project__content--right-part">
+                <div class="project__image-part">
                     <div class="project__image" style="background:url(./images/news-2.jpg) center / cover no-repeat"></div>
                 </div>
-                <div class="project__content--left-part">
+                <div class="project__content-part">
                     <div class="project__content-top-part">
                         <div class="project__content-top-part-rubrics">
                             <p>Название рубрики</p>
@@ -309,7 +361,7 @@
 
         <section class="project__section">
             <div class="project__container">
-                <div class="project__content--left-part">
+                <div class="project__content-part">
                     <div class="project__content-top-part">
                         <div class="project__content-top-part-rubrics">
                             <p>Название рубрики</p>
@@ -322,7 +374,7 @@
                         <a href="" class="project__content-bottom-part-button">Подробнее</a>
                     </div>
                 </div>
-                <div class="project__content--right-part">
+                <div class="project__image-part">
                     <div class="project__image" style="background:url(./images/news-2.jpg) center / cover no-repeat"></div>
                 </div>
             </div>
@@ -351,6 +403,7 @@
           $('.articles__swiper').slick({
             autoplay: false,
             arrows: false,
+            dots: true,
           });
         });
         $(document).ready(function(){
