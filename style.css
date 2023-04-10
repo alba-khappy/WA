@@ -729,6 +729,7 @@ div.slick-slide.articles__swiper-slide {
         bottom: 0;
         padding: 0 5%;
         overflow-x: scroll;
+        transition: all .3s;
     }
 
     .header__nav-list--show {
