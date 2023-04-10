@@ -483,14 +483,15 @@ div.slick-slide.articles__swiper-slide {
 }
 
 .articles__swiper .slick-dots {
-    top: -20%;
+    top: -18%;
     bottom: auto;
     margin: 0;
     padding: 1% 0;
 }
 
 .articles__swiper .slick-dots li {
-    margin: 0 4%;
+    width: auto;
+    margin: 0 1%;
 }
 
 .articles__swiper .slick-dots button {
@@ -897,11 +898,11 @@ div.slick-slide.articles__swiper-slide {
     }
 
     .articles__swiper .slick-dots {
-        top: -4%;
+        top: -5%;
     }
 
     .articles__swiper .slick-dots li {
-        margin: 0 10%;
+        margin: 0 4%;
     }
 }
 
