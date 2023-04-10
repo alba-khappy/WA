@@ -147,19 +147,19 @@
                             <ul class="articles__swiper-list">
                                 <li class="">
                                     <a href="" class="">
-                                        <div class="posts__item-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                                        <div class="posts__item-image" style="background:url(./images/news-2.jpg) center / cover no-repeat"></div>
                                         <h3 class="posts__item-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="" class="">
-                                        <div class="posts__item-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                                        <div class="posts__item-image" style="background:url(./images/news-2.jpg) center / cover no-repeat"></div>
                                         <h3 class="posts__item-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="" class="">
-                                        <div class="posts__item-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                                        <div class="posts__item-image" style="background:url(./images/news-2.jpg) center / cover no-repeat"></div>
                                         <h3 class="posts__item-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
                                     </a>
                                 </li>
@@ -172,19 +172,19 @@
                             <ul class="articles__swiper-list">
                                 <li class="">
                                     <a href="" class="">
-                                        <div class="posts__item-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                                        <div class="posts__item-image" style="background:url(./images/news-3.jpg) center / cover no-repeat"></div>
                                         <h3 class="posts__item-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="" class="">
-                                        <div class="posts__item-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                                        <div class="posts__item-image" style="background:url(./images/news-3.jpg) center / cover no-repeat"></div>
                                         <h3 class="posts__item-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="" class="">
-                                        <div class="posts__item-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
+                                        <div class="posts__item-image" style="background:url(./images/news-3.jpg) center / cover no-repeat"></div>
                                         <h3 class="posts__item-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
                                     </a>
                                 </li>
@@ -244,17 +244,17 @@
             <div class="video__container">
                 <h2 class="h2-style">Ваши видео</h2>
                 <ul class="posts__list">
-                    <li class="posts__item">
+                    <li class="posts__item video__item">
                         <div class="posts__item-image video__item-image" style="background:url(./images/news-1.jpg) center / cover no-repeat"></div>
                         <a href="" class="posts__item-rubric video__item-rubric">Название рубрики</a>
                         <h3 class="posts__item-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
                     </li>
-                    <li class="posts__item">
+                    <li class="posts__item video__item">
                         <div class="posts__item-image video__item-image" style="background:url(./images/news-2.jpg) center / cover no-repeat"></div>
                         <a href="" class="posts__item-rubric video__item-rubric">Название рубрики</a>
                         <h3 class="posts__item-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
                     </li>
-                    <li class="posts__item">
+                    <li class="posts__item video__item">
                         <div class="posts__item-image video__item-image" style="background:url(./images/news-3.jpg) center / cover no-repeat"></div>
                         <a href="" class="posts__item-rubric video__item-rubric">Название рубрики</a>
                         <h3 class="posts__item-heading">Proust: парижский отель с интерьерами Жака Гарсии</h3>
@@ -409,6 +409,13 @@
             autoplay: true,
             arrows: false,
             dots: true,
+            responsive: [
+                {
+                    breakpoint: 900,
+                    settings: {
+                        dots: false,
+                    }
+                }]
             });
         });
         $(document).ready(function(){
