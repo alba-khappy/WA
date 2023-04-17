@@ -157,7 +157,17 @@ input {
 }
 
 .header__nav-item {
-    transition: all .3s;
+    display: block; 
+    padding-bottom: .2rem;
+    background-image: linear-gradient(#fff 50%, #fff 50%), linear-gradient(transparent 50%, transparent 50%);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 0 1px, 100% 1px;
+    transition: .5s ease-in-out;
+}
+
+.header__nav-item:hover {
+    background-size: 100% 1px, 100% 1px;
 }
 
 .header__button-search {
@@ -181,14 +191,17 @@ input {
 
 .hero-banner__main-heading {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
+    display: flex; 
+    flex-direction: column; 
+    align-items:center;
+    justify-content:center;
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 3rem;
     line-height: 1.3;
+    padding: 8rem 5%;
     margin: auto;
     color: #fff;
+    z-index: 30;
 }
 
 /*swiper*/
@@ -366,11 +379,28 @@ input {
 }
 
 .project__container {
+    position: relative;
     max-width: 1920px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 4rem 0;
+}
+
+.project__container::before, .project__container::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: #000;
+}
+
+.project__container::before {
+    top: 0;
+}
+
+.project__container::after{
+    bottom: 0;
 }
 
 .project__content-top-part {
@@ -625,6 +655,10 @@ div.slick-slide.articles__swiper-slide {
     top: 0;
     bottom: 0;
     background: rgba(0,0,0,.6) url(./images/play.svg) center /  13% no-repeat;
+}
+
+.video__item::after {
+    display: none;
 }
 
 /*events__section*/
