@@ -523,7 +523,7 @@ div.slick-slide.articles__swiper-slide {
 .articles__swiper .slick-dots button {
     display: block;
     width: 6rem;
-    height: .1rem;
+    height: 4px;
     padding: 0;
     border: none;
     background-color: #DEDEDE;
@@ -694,6 +694,43 @@ div.slick-slide.articles__swiper-slide {
     background: #DEDEDE right / max(7rem) no-repeat;
     margin: 0 4%;
     padding-bottom: 4%;
+}
+
+.events__swiper .slick-prev {
+    top: -15%;
+    left: 75%;
+}
+
+.events__swiper .slick-next {
+    top: -15%;
+    right: 30%;
+}
+
+button.slick-next.slick-arrow:before, button.slick-prev.slick-arrow:before {
+    content: '';
+}
+
+button.slick-next.slick-arrow {
+    transform: rotate(180deg);
+}
+
+.events__swiper button.slick-next.slick-arrow, .events__swiper button.slick-prev.slick-arrow {
+    min-width: 4rem;
+    border: 1px solid #000;
+    background: transparent;
+    cursor: pointer;
+    outline: 1px solid;
+    outline-color: #000000;
+    outline-offset: 0px;
+    text-shadow: none;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    transition: all .3s;
+}
+
+.events__swiper button.slick-next.slick-arrow, .events__swiper button.slick-prev.slick-arrow {
+    background: url(./images/arrow.svg) no-repeat center;
 }
 
 /*brands__section*/
@@ -882,11 +919,39 @@ div.slick-slide.articles__swiper-slide {
      .video__item-rubric {
         margin-bottom: 1%;
     }
+
+    .events__swiper .slick-prev, .events__swiper .slick-next  {
+        top: -11%;
+    }
 }
 
 @media(max-width: 1200px) {
     html {
         font-size: 16px;
+    }
+
+    .events__heading-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .events__button-search {
+        position: relative;
+    }
+
+    .events__swiper .slick-prev, .events__swiper .slick-next  {
+        top: -15%;
+    }
+
+    .events__swiper .slick-next {
+        right: 65%;
+    }
+
+    .events__swiper .slick-prev {
+        left: 65%;
     }
 }
 
@@ -916,11 +981,6 @@ div.slick-slide.articles__swiper-slide {
 
     .order__container {
         padding: 5%;
-    }
-
-    .events__heading-wrapper {
-        text-align: center;
-        margin-bottom: 5%;
     }
 
     .events__button-search {
@@ -1052,5 +1112,13 @@ div.slick-slide.articles__swiper-slide {
 
     .articles__swiper-list li:not(:last-child) {
         margin-bottom: 10%;
+    }
+
+    .events__swiper .slick-next {
+        right: 80%;
+    }
+
+    .events__swiper .slick-prev {
+        left: 80%;
     }
 }
