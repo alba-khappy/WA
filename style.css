@@ -301,7 +301,6 @@ input {
 .posts__item-image {
     position: relative;
     width: 100%;
-    padding-top: 75%;
     margin-bottom: 5%;
 }
 
@@ -311,6 +310,13 @@ input {
     font-size: 1rem;
     line-height: 1.3;
     text-transform: uppercase;
+}
+
+.posts__item-image-link {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 75%;
 }
 
 /*section__subscription*/
@@ -691,7 +697,7 @@ div.slick-slide.articles__swiper-slide {
     text-align: center;
 }
 
-.video__item-image::after {
+.video__item-link::after {
     content: '';
     position: absolute;
     left: 0;
@@ -785,7 +791,7 @@ button.slick-next.slick-arrow {
     text-align: center;
 }
 
-.brands__item-image {
+.brands__item-image-link {
     padding-top: 133%;
 }
 
