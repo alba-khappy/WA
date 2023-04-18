@@ -206,6 +206,10 @@ input {
 
 /*swiper*/
 
+.hero-banner__swiper {
+    margin-bottom: 0;
+}
+
 .slick-slide img {
     width:100%;
 }
@@ -446,12 +450,18 @@ input {
     padding-top: 75%;
 }
 
+.project__image-link {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 /*articles__section*/
 
 .articles__section {
     position: relative;
     padding-right: 30%;
-    margin: 2rem;
+    margin: 2rem 0;
 }
 
 .articles__container {
@@ -529,18 +539,42 @@ div.slick-slide.articles__swiper-slide {
     background-color: #DEDEDE;
 }
 
-.articles__swiper li.slick-active button {
-    background-color: #000;
+.slick-dots li button:before{
+    display: none;
 }
 
-.articles__swiper .slick-dots li button:before {
-    content: '';
+.articles__swiper li.slick-active button {
+    background-color: #DADADA;
+    width: 6rem;
 }
+
+.articles__swiper li.slick-active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 4px;
+    background: #000;
+    animation: slick-line 1s;
+}
+
+@keyframes slick-line {
+    from {
+        width: 0;
+    }
+    to {
+        width: 6rem;
+    }
+} 
+
+
 
 /*popular__section*/
 
 .popular__section {
-    padding: 2% 0 4%;
+    padding-bottom: 4rem;
 }
 
 .popular__container {
@@ -893,6 +927,7 @@ button.slick-next.slick-arrow {
     .order__form {
         width: 100%;
         flex-direction: column;
+        align-items: center;
     }
 
     .order__input {
@@ -1062,8 +1097,8 @@ button.slick-next.slick-arrow {
         margin-bottom: 5%;
     }
 
-    .subscription__section {
-        margin-bottom: 5%;
+    .project__section, .events__section, .video__section {
+        padding: 2rem 0;
     }
 
     .project__container {
@@ -1087,10 +1122,6 @@ button.slick-next.slick-arrow {
 
     .popular__section {
         padding: 10% 0;
-    }
-
-    .video__section {
-        padding: 10% 0 15%;
     }
 
     .posts__item:not(:last-child) {
