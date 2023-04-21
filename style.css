@@ -151,10 +151,6 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Jost', sans-serif; 
-    color: #fff;
-    text-transform: uppercase;
-    font-size: .9rem;
 }
 
 .nav-list--text-color {
@@ -163,6 +159,10 @@ input {
 
 .nav-item {
     display: block; 
+    color: #fff;
+    font-family: 'Jost', sans-serif; 
+    text-transform: uppercase;
+    font-size: .9rem;
     padding-bottom: .2rem;
     background-image: linear-gradient(#fff 50%, #fff 50%), linear-gradient(transparent 50%, transparent 50%);
     background-position: center bottom;
@@ -847,7 +847,7 @@ button.slick-next.slick-arrow {
     }
 
     .header__nav-list {
-        display: none;
+        left: 100%;
     }
     
     .header__nav-list {
@@ -856,7 +856,6 @@ button.slick-next.slick-arrow {
         z-index: 10;
         width: 100%;
         height: 100%;
-        left: 0;
         right: 0;
         top: 0;
         bottom: 0;
