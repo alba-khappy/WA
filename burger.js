@@ -3,7 +3,6 @@ document.querySelector(".header__button-burger").addEventListener("click", funct
     document.querySelector(".header__nav-list").style.left = '0'; 
   });
 
-document.querySelector(".header__nav-button-close").addEventListener("click", function() {
-    // document.querySelector(".header__nav-list").classList.remove("header__nav-list--show"); 
+document.querySelector(".nav-button-close").addEventListener("click", function() {
     document.querySelector(".header__nav-list").style.left = '100%'; 
   });

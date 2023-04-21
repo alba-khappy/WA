@@ -1,0 +1,226 @@
+/*footer*/
+
+.footer__section {
+    background-color: #ddd;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.footer__container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/*subscribe__section*/
+
+.subscribe__heading {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin: 0 0 1rem;
+}
+
+.subscribe__description {
+    max-width: 60%;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin: 0 0 1rem;
+}
+
+.subscribe__form {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    margin-bottom: 2rem;
+}
+
+.subscribe__input {
+    font-size: 1rem;
+    font-family: Georgia, serif;
+    min-width: 25%;
+    padding: 1%;
+    border: 1px solid #000;
+    background: #fff;
+}
+
+/*publishing-office__section*/
+
+.publishing-office__section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 2rem;
+}
+
+.publishing-office__email-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: start;
+}
+
+.publishing-office__info-list {
+    display: flex;
+    flex-direction: column; 
+}
+
+.publishing-office__button {
+    max-width: 13rem;
+    background-color: #fff;
+}
+
+/*edition__section*/
+
+.edition__section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.edition__wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+}
+
+.edition__main-heading {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin: 0 0 1rem;
+}
+
+.edition__heading {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin: 0 0 1rem;
+}
+
+.edition__position {
+    font-family: 'PlayfairDisplay', Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.edition__name {
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 5%;
+}
+
+.magazine-info__list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.edition__description {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+}
+
+.edition__button-partner {
+    align-self: center;
+}
+
+/*footer__nav-list*/
+
+.nav-footer__section {
+    background-color: #222;
+}
+
+.footer__nav-list {
+    overflow-x: scroll;
+    background-color: #444;
+    padding: 1rem 0;
+}
+
+/*socials*/
+
+.socials__section {
+    background-color: #444;
+    padding: 1rem;
+}
+
+.socials__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    margin-bottom: 1rem;
+}
+
+.footer__additional-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    font-family: 'Jost', Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.3;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    overflow-x: scroll;
+}
+
+.footer__additional-menu-link {
+    white-space: nowrap;
+}
+
+/*privacy-policy__section*/
+
+.privacy-policy__section {
+    background-color: #000;
+    color: #555;
+    font-size: .7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.privacy-policy__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+
+.privacy-policy__link {
+    text-decoration: underline;
+}
+
+@media(max-width: 1024px) {
+
+    .edition__description, .publishing-office__section, .publishing-office__email-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .publishing-office__info-list, .publishing-office__email {
+        margin-bottom: 1rem;
+    }
+
+    .subscribe__input {
+        min-width: 40%;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .subscribe__description {
+        max-width: 100%;
+    }
+
+    .edition__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .socials__list {
+        gap: 5%;
+    }
+
+    .subscribe__form {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .subscribe__input {
+        width: 80%;
+        padding: 3% 5%;
+    }
+}
