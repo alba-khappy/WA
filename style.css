@@ -1082,6 +1082,10 @@ button.slick-next.slick-arrow {
         outline: none;
     }
 
+    .nav-list {
+        justify-content: inherit;
+    }
+
     .hero-banner__main-heading {
         font-size: 1.3rem;
     }
@@ -1168,10 +1172,10 @@ button.slick-next.slick-arrow {
     }
 
     .events__swiper .slick-next {
-        right: 80%;
+        right: 75%;
     }
 
     .events__swiper .slick-prev {
-        left: 80%;
+        left: 75%;
     }
 }

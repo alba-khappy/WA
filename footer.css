@@ -128,7 +128,7 @@
 .footer__nav-list {
     overflow-x: scroll;
     background-color: #444;
-    padding: 1rem 0;
+    padding: 1rem 5%;
 }
 
 /*socials*/
@@ -159,6 +159,7 @@
     justify-content: center;
     align-items: center;
     overflow-x: scroll;
+    padding: 0 5% 1rem;
 }
 
 .footer__additional-menu-link {
@@ -209,6 +210,10 @@
 
     .edition__wrapper {
         grid-template-columns: 1fr;
+    }
+
+    .footer__additional-menu {
+        justify-content: inherit;
     }
 
     .socials__list {
