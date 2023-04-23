@@ -64,6 +64,7 @@
 .publishing-office__button {
     max-width: 13rem;
     background-color: #fff;
+    color: #000;
 }
 
 /*edition__section*/
@@ -143,6 +144,14 @@
     align-items: center;
     gap: 1%;
     margin-bottom: 2rem;
+}
+
+.socials__item > a > svg > path, .socials__item > a > svg > g > path {
+    transition: all .5s ease;
+}
+
+.socials__item:hover a svg path {
+    fill: #ddd;
 }
 
 .footer__additional-menu {

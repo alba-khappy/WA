@@ -85,6 +85,7 @@ input {
     border: 1px solid #000;
     background: transparent;
     cursor: pointer;
+    color: #000;
     outline: 1px solid;
     outline-color: #000000;
     outline-offset: 0px;
@@ -106,6 +107,7 @@ input {
 
 .header__section {
     max-width: 1920px;
+    position: relative;
     margin: 0 auto;
     position: fixed;
     top: 0;
@@ -1072,7 +1074,12 @@ button.slick-next.slick-arrow {
     }
 
     .button-style {
+        outline: none;
         padding: .5rem 1.5rem;
+    }
+
+    .button-style:hover {
+        outline: none;
     }
 
     .hero-banner__main-heading {
