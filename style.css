@@ -1078,6 +1078,10 @@ button.slick-next.slick-arrow {
         padding: .5rem 1.5rem;
     }
 
+    .events__swiper button.slick-next.slick-arrow, .events__swiper button.slick-prev.slick-arrow {
+        outline: none;
+    }
+
     .button-style:hover {
         outline: none;
     }
