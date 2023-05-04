@@ -300,6 +300,7 @@ input {
     font-family: 'PlayfairDisplay', Georgia, serif;
     font-size: 1.5rem;
     line-height: 1.3;
+    transition: all .3s;
 }
 
 .posts__item-content {
@@ -313,6 +314,7 @@ input {
     position: relative;
     width: 100%;
     margin-bottom: 5%;
+    transition: all .3s;
 }
 
 .posts__item-rubric {
@@ -321,6 +323,12 @@ input {
     font-size: 1rem;
     line-height: 1.3;
     text-transform: uppercase;
+    color: #000;
+    transition: all .3s;
+}
+
+.posts__item-rubric:hover {
+    color: #aa5151;
 }
 
 .posts__item-image-link {
@@ -328,6 +336,11 @@ input {
     height: 100%;
     display: block;
     padding-top: 75%;
+}
+
+.posts__item-image:hover + .posts__item-heading, 
+.posts__item-heading:hover {
+    color: #777;
 }
 
 /*section__subscription*/
@@ -338,8 +351,9 @@ input {
 
 .subscription__container {
     max-width: 1920px;
+    display: grid;
+    grid-template-columns: 34% 66%;
     margin: 0 auto;
-    padding-left: 30%;
 }
 
 .subscription__container::after {
@@ -453,7 +467,17 @@ input {
 .project__main-heading {
     font-size: 2rem;
     line-height: 1.3;
+    color: #000;
     margin: 0;
+    transition: all .3s;
+}
+
+.project__main-heading:hover {
+    color: #777;
+}
+
+.project__rubrics-name:hover {
+    color: #aa5151;
 }
 
 .project__description {
@@ -512,6 +536,10 @@ input {
 .articles__content-wrapper {
     background-color: #DEDEDE;
     padding: 2rem;
+}
+
+.articles__swiper {
+    margin-bottom: 0;
 }
 
 .articles__swiper-tag-container {
@@ -575,6 +603,10 @@ div.slick-slide.articles__swiper-slide {
 .articles__swiper li.slick-active button {
     background-color: #DADADA;
     width: 6rem;
+}
+
+.articles__item-heading {
+    margin-bottom: 0;
 }
 
 .articles__swiper li.slick-active::after {
@@ -722,10 +754,19 @@ div.slick-slide.articles__swiper-slide {
     display: none;
 }
 
+.video__item-heading {
+    margin: 0;
+    transition: all .3s;
+}
+
+.posts__item-image:hover + .video__item-rubric + .video__item-heading {
+    color: #777;
+}
+
 /*events__section*/
 
 .events__section {
-    padding: 4rem 0;
+    padding: 2rem 0 0;
 }
 
 .events-container {
@@ -744,7 +785,7 @@ div.slick-slide.articles__swiper-slide {
 }
 
 .events__swiper {
-    padding-top: 1%;
+    margin-bottom: 0;
 }
 
 .events__slide {
@@ -765,6 +806,10 @@ div.slick-slide.articles__swiper-slide {
 .events__swiper .slick-next {
     top: -15%;
     right: 30%;
+}
+
+.events__item-heading, .events__item-content {
+    padding: 0 4%;
 }
 
 button.slick-next.slick-arrow:before, button.slick-prev.slick-arrow:before {
@@ -828,6 +873,10 @@ button.slick-next.slick-arrow {
         max-width: 100%;
         padding-left: 5%; 
         padding-right: 5%;
+    }
+
+    .subscription__container {
+        grid-template-columns: 36% 64%;
     }
 }
 
@@ -1094,6 +1143,10 @@ button.slick-next.slick-arrow {
         font-size: 1.3rem;
     }
 
+    .subscription__container {
+        grid-template-columns: 30% 70%;
+    }
+
     .order__text-wrapper {
         gap: 1%;
         margin-bottom: 10%;
@@ -1127,8 +1180,12 @@ button.slick-next.slick-arrow {
         margin-bottom: 5%;
     }
 
-    .project__section, .events__section, .video__section {
+    .project__section, .video__section {
         padding: 2rem 0;
+    }
+
+    .events__section {
+        padding: 0;
     }
 
     .project__container {
