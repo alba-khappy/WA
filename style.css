@@ -793,8 +793,21 @@ div.slick-slide.articles__swiper-slide {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: #DEDEDE right / max(7rem) no-repeat;
+    background: #DEDEDE right / contain no-repeat;
     margin: 0 4%;
+}
+
+.events__swiper .slick-list .slick-track {
+    display: flex;
+}
+
+.events__swiper .slick-list .slick-track .slick-slide {
+    height: auto;
+    flex:0 0 auto;
+}
+
+.events__slide {
+    height: 100%;
 }
 
 .events__swiper .slick-prev {
@@ -977,6 +990,7 @@ button.slick-next.slick-arrow {
 
     .articles__swiper-list {
         flex-direction: column;
+        gap: 1rem;
     }
 
     .order__container {
