@@ -618,7 +618,7 @@ div.slick-slide.articles__swiper-slide {
     bottom: 0;
     height: 4px;
     background: #000;
-    animation: slick-line 1s;
+    animation: slick-line 4s;
 }
 
 @keyframes slick-line {
@@ -795,8 +795,17 @@ div.slick-slide.articles__swiper-slide {
     text-align: center;
     background: #DEDEDE right / max(7rem) no-repeat;
     margin: 0 4%;
-    padding-bottom: 4%;
 }
+
+/* .events__swiper .slick-list .slick-track .swiper-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+} */
 
 .events__swiper .slick-prev {
     top: -15%;
@@ -810,6 +819,10 @@ div.slick-slide.articles__swiper-slide {
 
 .events__item-heading, .events__item-content {
     padding: 0 4%;
+}
+
+.events__item-heading {
+    margin: 0 0 1rem;
 }
 
 button.slick-next.slick-arrow:before, button.slick-prev.slick-arrow:before {

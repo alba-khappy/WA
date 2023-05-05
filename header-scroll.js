@@ -1,11 +1,10 @@
-window.addEventListener('scroll', function() {
+let oldScrollY = 0;
+window.addEventListener('scroll', function(event) {
 
-    let oldScrollY = 0;
     let header = document.querySelector(".header__section");
 
     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
     let dY = scrolled - oldScrollY;
-
     if ( dY > 0 ){
         header.classList.remove('header__section--show');
         header.classList.add('header__section--hide');
