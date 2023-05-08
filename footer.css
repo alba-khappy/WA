@@ -3,7 +3,6 @@
 .footer__section {
     background-color: #ddd;
     padding-top: 2%;
-    padding-bottom: 2%;
     color: #404040;
 }
 
@@ -160,7 +159,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: scroll;
     padding: 0 5% 1rem;
 }
 
