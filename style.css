@@ -129,10 +129,7 @@ input {
 
 .header__section--show {
     display: flex;
-}
-
-.header__section--background {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .header__logo {
