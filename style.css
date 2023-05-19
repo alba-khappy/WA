@@ -1059,6 +1059,16 @@ p.wp-caption-text {
     display: none;
 }
 
+ul {
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+ol {
+    list-style-position: inside;
+    list-style-type: decimal;
+}
+
 @media(max-width: 1300px) {
     .article__wrapper {
         padding: 0 5%;
