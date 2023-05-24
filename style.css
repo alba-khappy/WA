@@ -32,6 +32,10 @@ ul {
     margin: 0;
 }
 
+li {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
     outline: none;
@@ -987,6 +991,16 @@ article {
     font-weight: 700;
 }
 
+.article__wrapper ul li {
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+.article__wrapper ol li {
+    list-style-position: inside;
+    list-style-type: decimal;
+}
+
 .article__wrapper li:not(:last-child) {
    margin-bottom: .5rem;
 }
@@ -1053,16 +1067,6 @@ p.wp-caption-text {
 
 .header__button-burger--article-page {
     display: none;
-}
-
-ul {
-    list-style-position: inside;
-    list-style-type: disc;
-}
-
-ol {
-    list-style-position: inside;
-    list-style-type: decimal;
 }
 
 @media(max-width: 1300px) {
